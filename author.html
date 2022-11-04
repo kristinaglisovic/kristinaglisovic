@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kristina Glišović-Author</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <meta name="keywords" content="author,slider" />
+    <meta name="description" content="On this page you can see more information about creator of this site" />
+    <meta name="author" content="mailto:kristina.glisovic.55.19@ict.edu.rs" />
+    <meta name="copyright" content="Kristina Glišović @ 2020." />
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.immersive-slider.min.js"></script>
+    <link href='css/immersive-slider.min.css' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/ikona.ico" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>AUTHOR</h1>
+        </header>
+        <div class="main">
+            <div class="page_container">
+                <div id="immersive_slider">
+                    <!--SLIDE1-->
+                    <div class="slide" data-blurred="img/slide1_blurred.jpg">
+                        <div class="content">
+                            <h2>ID</h2>
+                            <p>My name is KRISTINA GLIŠOVIĆ and I'm a creator of this site.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="img/slide1.jpg" alt="Slider1">
+                        </div>
+                    </div>
+                    <!--SLIDE2-->
+                    <div class="slide" data-blurred="img/slide1_blurred.jpg">
+                        <div class="content">
+                            <h2>STUDIES</h2>
+                            <p>I'm currently a student at ICT College, where I've started to learn all about IT, and I'm
+                                trying my best to improve all of my skills everyday.
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="img/slide2.jpg" alt="Slider2"></a>
+                        </div>
+                    </div>
+                    <!--SLIDE3-->
+                    <div class="slide" data-blurred="img/slide1_blurred.jpg">
+                        <div class="content">
+                            <h2>PROJECTS</h2>
+                            <p>If you want to see more projects you can visit my website by clicking down below
+                            </p>
+                            <a href="https://kimaportfolio.netlify.app/"><button id="portfolio"
+                                    type="button">PORTFOLIO</button></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/slide3.jpg" alt="Slider3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#immersive_slider").immersive_slider({
+                    container: ".main"
+                });
+            });
+        </script>
+    </div>
+
+    <footer id="footAutor">
+        <a href="index.html">
+            <h4>BACK TO THE MAIN PAGE</h4>
+        </a>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11278966-3"></script>
+    <script>
+        //popravljen bag za touch na mobilnim verzijama
+        document.querySelector('.slide').addEventListener('touchstart', f);
+        document.querySelector('.slide').addEventListener('touchend', f);
+        document.querySelector('.slide').addEventListener('touchmove', f);
+        function f(ev) {
+            console.log(ev.touches.ev.type);
+        }
+    </script>
+
+</body>
+
+</html>
